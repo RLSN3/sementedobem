@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sementedobem.rlsn.com.br/sitemap.xml
