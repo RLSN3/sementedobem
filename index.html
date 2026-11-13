@@ -6,7 +6,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Empório Semente do Bem | Produtos naturais e suplementos no Amapá e Pará</title>
 <meta name="description" content="Há 10 anos cuidando da sua saúde: produtos naturais, vitaminas e suplementos em 6 lojas em Macapá, Oiapoque e Santarém. Fale com a sua loja pelo WhatsApp.">
-<meta name="theme-color" content="#EFEADB">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#EFEADB" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#121a13" media="(prefers-color-scheme: dark)">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <link rel="icon" href="favicon.ico" sizes="48x48">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
@@ -596,6 +598,72 @@ html .parc-l .plogo{display:flex;align-items:center;justify-content:center;width
 html .parc-l .plogo img{padding:0;margin:0;border:0;box-shadow:none;position:static;width:auto;height:auto;max-width:100%;max-height:100%;filter:none;opacity:1;border-radius:0;object-fit:contain;display:block}
 @media (max-width:999px){html .parc-l li{flex:0 0 calc((100% - 48px)/4)}}
 @media (max-width:599px){html .parc-l{gap:8px}html .parc-l li{flex:0 0 calc((100% - 16px)/3);height:64px;padding:8px}html .parc-l .plogo{width:100%;max-width:92px;height:36px}}
+</style>
+<style id="dark-mode">
+/* ===== Modo escuro: segue a preferência do sistema/navegador (Chrome, Google, Android, iOS) ===== */
+@media (prefers-color-scheme:dark){
+:root{color-scheme:dark;--bg:#121a13;--tint:#1a241b;--card:#1e2a1f;--ink:#e7e1d0;--deep:#bcdca0;--brown:#d6c09a;--mid:#a5d27f;--dg:#2E5B33}
+.cls-1{fill:#efe6d2!important}
+:root .skip{background:var(--card)}
+/* botões */
+:root .btn,:root .up{background:var(--soft);border-color:var(--soft);color:#10260f}
+:root .btn:hover,:root .up:hover{background:transparent;color:var(--soft);border-color:var(--soft)}
+:root .btn.ghost{background:transparent;color:var(--deep);border-color:var(--deep)}
+:root .btn.ghost:hover{background:var(--deep);color:#10260f}
+:root .btn:hover{box-shadow:0 10px 22px rgba(0,0,0,.35)}
+/* hero com foto: mantém o visual original */
+:root .hs,:root .hstage{background:var(--dg)}
+:root .hstage .btn{background:#fff;color:var(--dg);border-color:#fff}
+:root .hstage .btn:hover{background:transparent;color:#fff;border-color:#fff}
+:root .hstage .btn.ghost{background:transparent;color:#fff;border-color:#fff}
+:root .hstage .btn.ghost:hover{background:#fff;color:var(--dg)}
+:root .hs-b{color:var(--dg)}
+:root .hs-b:hover{background:var(--dg);color:#fff}
+:root .ctl button:hover{color:var(--dg)}
+/* topo, menu e barra inferior */
+:root header.top.solid{background:rgba(18,26,19,.94);box-shadow:0 1px 0 rgba(255,255,255,.08)}
+:root nav.main{box-shadow:0 12px 24px rgba(0,0,0,.45)}
+:root .dock{background:rgba(18,26,19,.97);border-top-color:rgba(255,255,255,.1)}
+:root .dock a.dock-sup{background:var(--soft);color:#10260f}
+/* seções coloridas em versões escuras */
+:root .s-pale,:root .central{background:#18241a}
+:root .s-soft{background:#1c2c1c}
+:root .s-lime{background:#22341c;color:var(--ink)}
+:root .s-lime h2{color:var(--deep)}
+:root .s-lime em,:root .s-lime .tag{color:var(--soft)}
+:root .s-brown{background:#33281a}
+:root .s-deep{background:#173119}
+:root .s-pale::after,:root .s-soft::after,:root .s-deep::after{opacity:.18}
+:root .s-soft .tag,:root .s-pale .tag,:root .s-soft .bridge b{color:var(--deep)}
+:root .s-lime .btn.ghost{color:var(--deep);border-color:var(--deep)}
+:root .s-lime .btn.ghost:hover{background:var(--deep);color:#10260f}
+:root .s-lime .rv:has(>.foto)::before{background:var(--lime)}
+:root main>section:not(#inicio){box-shadow:0 -16px 36px rgba(0,0,0,.4)}
+/* cartões, listas e fotos */
+:root .foto,:root .s-lime .foto{background:rgba(255,255,255,.04);border-color:rgba(188,220,160,.35);color:var(--deep)}
+:root .foto.has{background:var(--tint)}
+:root .marcos li{background:rgba(255,255,255,.05)}
+:root .chip{background:var(--card);border-color:rgba(188,220,160,.3)}
+:root .chip[aria-pressed=true]{background:var(--soft);border-color:var(--soft);color:#10260f}
+:root .lista li,:root .lg li{background:var(--card)}
+:root .lista li:hover{box-shadow:0 12px 28px rgba(0,0,0,.45)}
+:root .atd-grid li{box-shadow:0 10px 26px rgba(0,0,0,.3)}
+:root .rank,:root .badge,:root .hist-badge,:root .atd-grid li::before,:root .fab{background:var(--dg)}
+:root .fab:hover{background:#34702F}
+:root .sl:nth-child(4n){background:#F7F4EA}
+:root .geo{background:var(--card)}
+:root .geo:hover{background:var(--soft);border-color:var(--soft);color:#10260f}
+:root .lj .x:hover{background:var(--deep);color:#10260f}
+:root .bridge{border-top-color:rgba(188,220,160,.2)}
+:root .copyrow{border-top-color:rgba(255,255,255,.1)}
+:root dialog{box-shadow:0 20px 60px rgba(0,0,0,.6)}
+:root dialog::backdrop{background:rgba(0,0,0,.6)}
+/* logos das marcas parceiras: fundo claro para continuarem legíveis */
+:root .bl{background:#ece6d6;border-color:rgba(255,255,255,.08);box-shadow:none}
+:root .bl .bph{color:var(--dg)}
+:root .parc-l li{background:#ece6d6;box-shadow:0 10px 26px rgba(0,0,0,.35)}
+:root .parc-l b{color:var(--dg)}
+}
 </style>
 </head>
 <body>
